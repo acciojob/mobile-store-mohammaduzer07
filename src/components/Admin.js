@@ -17,7 +17,7 @@ const Admin = ()=>{
 
     return <div>
         <h1>Admin Panel</h1>
-        <button onClick={addProduct}>Add Product</button>
+        <button className='btn' onClick={addProduct}>Add Product</button>
         <ul>
             {products.map((item) =>{
                 return <li key={item.id}>{item.name}</li>
@@ -26,7 +26,7 @@ const Admin = ()=>{
         <ul>
             {products.map((task, index) =>{
                 return <li key={task.id}>
-                    <button onClick={() => handleDelete(task)}>Delete</button>
+                    <button className='row' onClick={() => handleDelete(task)}>Delete</button>
                 </li>
             })}
         </ul>

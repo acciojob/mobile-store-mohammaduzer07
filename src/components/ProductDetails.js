@@ -13,7 +13,7 @@ const ProductDetails = ()=>{
         <h1>{product.name}</h1>
         <p>Price : {product.price}</p>
         <p>Description : {product.description}</p>
-        <button onClick={() => navigate("/")}>Back</button>
+        <button className='.col-12' onClick={() => navigate("/")}>Back</button>
     </div>
 }   
 
