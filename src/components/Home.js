@@ -9,7 +9,8 @@ const Home = () =>{
         <ul>
             {ProductData.map((product) =>{
                 return <li>
-                    <Link to={`/products/${product.id}`}>{product.name}</Link>
+                    <Link to={`/products/${product.id}`}>
+                    {product.name} <button className="btn">Buy</button></Link>
                 </li>
             })}
         </ul>
